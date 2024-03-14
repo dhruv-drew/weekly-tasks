@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1569629743817-70d8db6c323b?q=80&w=1798&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    /* background-position: ce; */
+}
+
+/* .main-logo{
+} */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-logo {
+    overflow: hidden;
+}
+
+.main-logo>h1 {
+
+    overflow: hidden;
+    font-size: 14rem;
+    margin-left: 5%;
+    color: #000;
+}
+
+.nav-items {
+    width: 40vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5%;
+}
+
+.nav-part1 {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.nav-part1>h4 {
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 8%;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.bottom {
+    height: 100px;
+    width: 100%;
+    /* background-color: #000; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.b-part {
+    /* border:1px solid red; */
+    height: 100%;
+    overflow: hidden;
+}
+
+.b-part1 {
+    width: 60%;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 5%;
+    align-items: center;
+}
+
+.b-part2 {
+    width: 30%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5%;
+}
+
+.hover-btn {
+    height: 50px;
+    width: 230px;
+    /* padding: 4%; */
+    background-color: #000;
+    border-radius: 20px;
+    /* color: #fff; */
+    border: none;
+    /* font-weight: bolder; */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.hover-btn>span {
+    color: #fff;
+    font-weight: bolder;
+    position: rel;
+    z-index: 10;
+    font-size: 1.2rem;
+}
+
+.hover-btn::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba(135, 206, 250, 0.49);
+    z-index: 9;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.hover-btn:hover::after {
+    left: 0;
+    border-radius: 0px;
+
+}
+
+.hover-btn:hover .hover-btn>span {
+    color: #000;
+}
+
+/* page2 starts here */
+
+.page-2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.page-2>.row {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red    ; */
+}
+
+.box {
+    padding: 4%;
+}
+
+.box-1 {
+    background-color: #151623;
+}
+
+
+.all-solutio-btn {
+    background-color: transparent;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.all-solutio-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.box-2 {
+    height: 100%;
+    background-image: url("https://www.datocms-assets.com/40358/1611761434-perseat2.jpg?ar64=MTY6Mjc&auto=format&fit=crop&w=960?auto=format&fit=max&w=3840&q=100");
+    background-size: cover;
+    /* background-position: center; */
+    padding: 2%;
+}
+
+.box-2 h1 {
+    color: #fff;
+    /* font-weight: 5vmin; */
+}
+
+.box-3 h1 {
+    color: #fff;
+    /* font-weight: 5vmin; */
+}
+
+.hidden-h2 {
+    /* display: none; */
+    opacity: 0;
+    margin-bottom: -10%;
+    transition: 0.4s;
+}
+
+.box-2:hover .hidden-h2 {
+    margin-bottom: 0%;
+    opacity: 1;
+}
+
+.box-3:hover .hidden-h2 {
+    margin-bottom: 0%;
+    opacity: 1;
+}
+
+.box-3 {
+    height: 100%;
+    background-image: url("https://www.datocms-assets.com/40358/1611759665-cannes.jpg?auto=format");
+    background-size: cover;
+    padding: 2%;
+    /* background-position: center; */
+}
+
+
+/* -------------page3 starts here--------- */
+
+.page3 {
+    height: 110vh;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 7%;
+}
+
+.page3-text {
+    height: 100%;
+    width: 100%;
+    /* background-color: #000; */
+    /* border: 1px solid; */
+    padding: 2%;
+    overflow: hidden;
+}
+
+.page-3-col {
+    height: 70vh;
+}
+
+.page-3-col1 {
+    border-bottom-right-radius: 60px;
+    background-image: url("https://www.datocms-assets.com/40358/1611759665-cannes.jpg?auto=format&fit=crop&h=621&w=800");
+}
+
+.page-3-col2 {
+    overflow: hidden;
+}
+
+.slides-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+}
+
+.slide {
+    position: absolute;
+    /* font-size: 90px; */
+    /* font-weight: 700; */
+    /* color: rgba(255,255,255,0.9); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* width: 100vw; */
+}
+
+.slides-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.input-areas-page3 {
+    height: 70vh;
+    overflow: hidden;
+}
+.page3-input-areas{
+    border-top: 1px solid #000000aa;
+    border-bottom: 1px solid #000000aa;
+    border-bottom-right-radius: 30px;
+}
+.page3-input-areas2{
+    border-top: 0;
+    border-bottom: 1px solid #000000aa;
+    border-bottom-right-radius: 30px;
+    /* border-bottom: 1px solid ; */
+}
+
+
+/* ---------page4 starts here---------- */
+.page4{
+    height: 100vh;
+    width: 100%;
+    /* background-color: ; */
+    background: linear-gradient(#fff, #D3E3F2);
+    padding: 8%;
+}
+.footer-text{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer-text h1{
+    font-size: 16vmin;
+    position: relative;
+    /* overflow: visible; */
+    cursor: pointer;
+    height: 200px;
+}
+.footer-text h1::after{
+    content: "";
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 35%;
+    left: -100%;
+    /* scale: 0; */
+    background-color: #000;
+    transition: 0.4s;
+}
+.footer-text h1:hover::after{
+    /* scale: 1; */
+    left: 0;
+}
+.footer-text h3{
+    font-weight: 900;
+    font-size: 4vmin;
+    letter-spacing: -1px;
+    color: #0000004d;
+    cursor: pointer;
+    overflow: hidden;
+}
+.footer-text h5{
+    cursor: pointer;
+    overflow: hidden;
+}
